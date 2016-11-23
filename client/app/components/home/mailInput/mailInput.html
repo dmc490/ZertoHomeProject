@@ -1,0 +1,7 @@
+<div class="mailInput">
+  <form name="vm.mailForm">
+    <label for="mail-input">Editor</label>
+    <input id="mail-input" type="email" ng-model="vm.mail" required>
+    <button class="btn" ng-click="vm.addMail()" ng-disabled="vm.mailForm.$invalid">Send</button>
+  </form>
+</div>

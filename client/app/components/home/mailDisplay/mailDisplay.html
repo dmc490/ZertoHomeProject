@@ -1,0 +1,17 @@
+<div class="mailDisplay">
+  <label>Display</label>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Function</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="mailrow in vm.mails track by $index">
+        <td>{{mailrow}}</td>
+        <td><button ng-click='vm.removeMail($index)'>Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
